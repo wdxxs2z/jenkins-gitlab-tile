@@ -1,0 +1,26 @@
+---
+name: jenkins-gitlab-cicd
+product_version: '0.1.10'
+metadata_version: '1.8'
+stemcell_criteria:
+  os: ubuntu-trusty
+  version: '3421.11'
+  enable_patch_security_updates: true
+
+releases:
+- name: docker 
+  version: '28.0.1+dev.39'
+  file: docker-28.0.1+dev.39.tgz 
+  md5: 2f2a88fc1f69be46e3eaa041111e27ef
+- name: gitlab-ce
+  version: '0+dev.7'
+  file: gitlab-ce-0+dev.7.tgz
+  md5: b28aeb57191cea7dcb5a99993e4165cb
+- name: jenkins-swarm
+  version: '0+dev.22'
+  file: jenkins-swarm-0+dev.22.tgz
+  md5: 86f1a7c6407942b8be4a5216cccda84a
+
+provides_product_versions:
+- name: jenkins-gitlab-cicd
+  version: '0.1.0'
