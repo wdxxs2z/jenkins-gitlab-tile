@@ -8,10 +8,10 @@ stemcell_criteria:
   enable_patch_security_updates: true
 
 releases:
-- name: docker 
-  version: '28.0.1+dev.39'
-  file: docker-28.0.1+dev.39.tgz 
-  md5: 2f2a88fc1f69be46e3eaa041111e27ef
+- name: docker
+  version: '28.0.2+dev.4'
+  file: docker-28.0.2+dev.4.tgz 
+  md5: 8d41c5e440bbc13ec6e828c199838720
 - name: gitlab-ce
   version: '0+dev.7'
   file: gitlab-ce-0+dev.7.tgz
